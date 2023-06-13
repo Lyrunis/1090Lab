@@ -1,0 +1,65 @@
+class tempConverter
+    main()
+        //var declaration
+        num fTemp
+        num cTemp
+
+        //main process
+        output "Enter the temperature (Fahrenheit) that you would like to convert to Celsius"
+        input fTemp
+        cTemp = ((fTemp - 32) * 5) / 9
+        output fTemp, " Fahrenheit is ", cTemp, " Celsius"
+    return
+end class
+
+class ageChecker
+    main()
+        //var declaration
+        num guestAge
+
+        //main process
+        output "Please enter your age"
+        input guestAge
+
+        if (guestAge => 21) then
+            output "Please take the wristband dispensed below"
+        end if
+    return
+end class
+
+class shippingCalc
+    main()
+        //var declaration
+        num itemCost
+        num shippingCost
+        num totalCost
+
+        //main process
+        output "Please enter the cost of your item"
+        input itemCost
+        if (itemCost => 100) then
+            shippingCost = 0
+            totalCost = shippingCost + itemCost
+        else if ( itemCost => 0 && itemCost < 100) then
+            shippingCost = itemCost * .02
+            totalCost = shippingCost + itemCost
+        else
+            output "Invalid item cost"
+            return
+        end if
+        output "Your shipping cost is $", shippingCost, "for a total of $", totalCost
+    return
+end class
+
+class birthMonthOutput
+    main()
+        //var declaration
+        num birthMonth
+
+        //main process
+        output "Please enter your birth month [1-12]"
+        input birthMonth
+
+        if ((birthMonth => 1) && (birthMonth =< 12)) then
+            output "Your birth month is: ", birthMonth
+        else
