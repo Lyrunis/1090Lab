@@ -46,7 +46,7 @@ public class main {
         for (int i = 0; i < dataPoints.length; i++) {
             if (dataPoints[i] == userValue) {
                 position = i;
-                break; // Exit if found
+                break; // Exit if val found
             }
         }
         if (position != -1) {
