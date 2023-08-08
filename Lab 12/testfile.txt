@@ -1,0 +1,4 @@
+This is the test file for the JFileChooser plugin lab.
+This is line two
+Line three
+and line four
